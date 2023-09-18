@@ -1,0 +1,102 @@
+.main {
+  margin-top: 4em;
+}
+.main h1 {
+  margin: 1.5em 0 0.7em 0;
+  font-family: var(--Headings);
+  text-align: center;
+  text-transform: uppercase;
+}
+.main .vr_section .sectionImage {
+  background-image: url(../images/mobile/image-interactive.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 248px;
+}
+.main .vr_section p {
+  width: 90%;
+  margin-inline: auto;
+  text-align: center;
+  color: var(--smallTextColor);
+  font-family: var(--smallTextFont);
+  line-height: 1.65em;
+  margin-bottom: 5em;
+}
+.main .ourCreations h1 {
+  margin-bottom: 1.25em;
+}
+.main .ourCreations .boxes {
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 1.25em;
+}
+.main .ourCreations .boxes h2 {
+  color: var(--whiteFontColor);
+  font-family: var(--Headings);
+  font-weight: lighter;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+}
+.main .ourCreations a {
+  display: block;
+  width: 45%;
+  height: 3em;
+  padding: 0.7em 0;
+  margin-inline: auto;
+  text-align: center;
+  color: var(--blackFontColor);
+  border: 1px solid var(--blackFontColor);
+  font-family: var(--smallTextFont);
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+.main .ourCreations a:hover {
+  background-color: black;
+  color: white;
+}
+.main .ourCreations .gallery .image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 150px;
+}
+.main .ourCreations .gallery .boxes#one .image {
+  background-image: url(../images/mobile/image-deep-earth.jpg);
+}
+.main .ourCreations .gallery .boxes#two .image {
+  background-image: url(../images/mobile/image-night-arcade.jpg);
+}
+.main .ourCreations .gallery .boxes#three .image {
+  background-image: url(../images/mobile/image-soccer-team.jpg);
+}
+.main .ourCreations .gallery .boxes#four .image {
+  background-image: url(../images/mobile/image-grid.jpg);
+}
+.main .ourCreations .gallery .boxes#five .image {
+  background-image: url(../images/mobile/image-from-above.jpg);
+}
+.main .ourCreations .gallery .boxes#six .image {
+  background-image: url(../images/mobile/image-pocket-borealis.jpg);
+}
+.main .ourCreations .gallery .boxes#seven .image {
+  background-image: url(../images/mobile/image-curiosity.jpg);
+}
+.main .ourCreations .gallery .boxes#eight .image {
+  background-image: url(../images/mobile/image-fisheye.jpg);
+}
+
+.activeImg {
+  opacity: 0.6;
+}
+
+.activeH2 {
+  opacity: 1 !important;
+  color: var(--blackFontColor) !important;
+  font-weight: bolder !important;
+}/*# sourceMappingURL=main.css.map */

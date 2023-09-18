@@ -1,0 +1,173 @@
+@media screen and (min-width: 1100px) {
+  body {
+    width: min(100%, 96rem);
+  }
+
+  .container {
+    max-width: 1100px;
+  }
+
+  .head {
+    background-image: url(../images/desktop/image-hero.jpg);
+  }
+  .head .header .container {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: auto auto;
+  }
+  .head .header .container .logo img {
+    width: 30%;
+  }
+  .head .header .container .menuIcon {
+    display: none;
+  }
+  .head .header .container .desktopNavigation {
+    display: block;
+    grid-column: 2;
+  }
+  .head .header .container .desktopNavigation ul {
+    display: flex;
+  }
+  .head .header .container .desktopNavigation ul li {
+    margin-left: 2em;
+  }
+  .head .header .container .desktopNavigation ul li a {
+    color: var(--whiteFontColor);
+    font-family: var(--smallTextFont);
+    font-size: 0.9em;
+    text-transform: unset;
+    padding: 0.25em;
+  }
+  .head .header .container .desktopNavigation ul li:hover {
+    border-bottom: 1px solid var(--whiteFontColor);
+  }
+  .head .headText {
+    width: 60%;
+    margin: 10vh 0em;
+  }
+  .head .headText p {
+    font-size: 5em;
+  }
+
+  .main .container .vr_section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+  }
+  .main .container .vr_section .sectionImage {
+    background-image: url(../images/desktop/image-interactive.jpg);
+    height: 500px;
+    grid-column: 1;
+    grid-row: 1;
+    overflow: hidden;
+  }
+  .main .container .vr_section .textSection {
+    background-color: #fff;
+    overflow: hidden;
+    width: 100%;
+    grid-column: 2/span 4;
+    padding: 3em;
+    margin-top: 11em;
+    margin-left: -8em;
+  }
+  .main .container .vr_section .textSection h1, .main .container .vr_section .textSection p {
+    text-align: left;
+    width: 100%;
+  }
+  .main .container .vr_section .textSection h1 {
+    width: 70%;
+  }
+  .main .container .ourCreations {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  .main .container .ourCreations h1 {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0;
+  }
+  .main .container .ourCreations .seeAll {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .main .container .ourCreations .gallery {
+    margin-top: 4em;
+    grid-column: 1/span 2;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto;
+  }
+  .main .container .ourCreations .gallery .image {
+    height: 450px;
+  }
+  .main .container .ourCreations .gallery .boxes#one .image {
+    background-image: url(../images/desktop/image-deep-earth.jpg);
+  }
+  .main .container .ourCreations .gallery .boxes#two .image {
+    background-image: url(../images/desktop/image-night-arcade.jpg);
+  }
+  .main .container .ourCreations .gallery .boxes#three .image {
+    background-image: url(../images/desktop/image-soccer-team.jpg);
+  }
+  .main .container .ourCreations .gallery .boxes#four .image {
+    background-image: url(../images/desktop/image-grid.jpg);
+  }
+  .main .container .ourCreations .gallery .boxes#five .image {
+    background-image: url(../images/desktop/image-from-above.jpg);
+  }
+  .main .container .ourCreations .gallery .boxes#six .image {
+    background-image: url(../images/desktop/image-pocket-borealis.jpg);
+  }
+  .main .container .ourCreations .gallery .boxes#seven .image {
+    background-image: url(../images/desktop/image-curiosity.jpg);
+  }
+  .main .container .ourCreations .gallery .boxes#eight .image {
+    background-image: url(../images/desktop/image-fisheye.jpg);
+  }
+
+  .footer {
+    margin-top: 7em;
+  }
+  .footer .container {
+    display: grid;
+    grid-template-columns: 30% 44% 26%;
+    grid-template-rows: auto auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer .container .logo {
+    width: 55%;
+    margin-top: 0;
+  }
+  .footer .container .logo img {
+    width: 172px;
+    height: 30px;
+  }
+  .footer .container .footer_menu {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .footer .container .footer_menu ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer .container .footer_menu ul li {
+    margin: 1em 1em 0 0;
+  }
+  .footer .container .footer_menu ul li a {
+    padding-bottom: 0.5em;
+  }
+  .footer .container .socials {
+    margin: 0;
+    text-align: right;
+    grid-row: 1;
+    grid-column: 3;
+  }
+  .footer .container p {
+    margin: 0;
+    grid-row: 2;
+    grid-column: 3;
+  }
+}/*# sourceMappingURL=mediaQueries.css.map */

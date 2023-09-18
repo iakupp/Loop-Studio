@@ -1,0 +1,88 @@
+.desktopNavigation {
+  display: none;
+}
+
+.addMobileBg {
+  background-color: var(--blackFontColor);
+  background-image: none;
+  animation: opacity 1s ease-in-out;
+  -webkit-animation: opacity 0.5s ease-in-out;
+  height: 650px;
+  z-index: 99;
+}
+
+@-webkit-keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.head {
+  background-image: url(../images/mobile/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 650px;
+}
+.head .header .container {
+  display: grid;
+  grid-template-columns: 90% 10%;
+  grid-template-rows: auto auto;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.head .header .container .logo img {
+  cursor: pointer;
+  width: 50%;
+}
+.head .header .container .menuIcon {
+  display: block;
+}
+.head .header .container .menuIcon img {
+  width: 20px;
+}
+.head .header .container .mobileNavigation {
+  display: none;
+  position: absolute;
+  top: 10em;
+  left: 1.5em;
+}
+.head .header .container .mobileNavigation li {
+  width: 100%;
+  margin-bottom: 2em;
+}
+.head .header .container .mobileNavigation li a {
+  padding: 1em 0.1em;
+  color: var(--whiteFontColor);
+  font-family: var(--Headings);
+  font-size: 2em;
+  text-transform: uppercase;
+}
+.head .header .container .mobileNavigation li:hover {
+  border-bottom: 1px solid var(--whiteFontColor);
+}
+.head .headText {
+  margin: 25vh 1.5em;
+  border: 2px solid var(--whiteFontColor);
+  padding: 1em 1em;
+  grid-column: 1/span 2;
+}
+.head .headText p {
+  margin-top: -0.6em;
+  font-family: var(--Headings);
+  text-transform: uppercase;
+  font-size: 2.5em;
+  color: var(--whiteFontColor);
+}/*# sourceMappingURL=header.css.map */

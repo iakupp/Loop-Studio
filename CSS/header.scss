@@ -1,0 +1,81 @@
+
+.desktopNavigation{
+    display: none;
+}
+
+.addMobileBg{
+ background-color: var(--blackFontColor);
+ background-image: none;
+ animation: opacity 1s ease-in-out;
+ -webkit-animation: opacity .5s ease-in-out;
+ height: 650px;
+ z-index: 99;
+}
+@keyframes opacity {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.head{
+    background-image: url(../images/mobile/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 650px;
+    .header{
+        .container{
+            display: grid;
+            grid-template-columns: 90% 10%;
+            grid-template-rows: auto auto;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            .logo{
+                img{
+                    cursor: pointer;
+                    width: 50%;
+                }
+            }
+            .menuIcon{
+                display: block;
+                img{
+                    width: 20px ;
+                }
+            }
+            .mobileNavigation{
+                display: none;
+                position: absolute;
+                top: 10em;
+                left: 1.5em;
+                li{
+                    width: 100%;
+                    margin-bottom: 2em;
+                    a{
+                        padding: 1em .1em;
+                        color: var(--whiteFontColor) ;
+                        font-family:var(--Headings) ;
+                        font-size: 2em;
+                        text-transform: uppercase;
+                    }
+                    &:hover{
+                        border-bottom: 1px solid var(--whiteFontColor);
+                    }
+                }
+
+            }
+        }
+    }
+    .headText{
+        margin: 25vh 1.5em;
+        border: 2px solid var(--whiteFontColor);
+        padding: 1em 1em;
+        grid-column: 1 / span 2 ;
+        p{
+            margin-top: -.6em;
+            font-family: var(--Headings);
+            text-transform: uppercase;
+            font-size: 2.5em;
+            color: var(--whiteFontColor);
+        }
+    }
+}

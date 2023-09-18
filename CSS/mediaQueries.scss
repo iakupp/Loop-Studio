@@ -1,0 +1,202 @@
+@media screen and (min-width:1100px){
+    body{
+        width: min(100%, 96rem);
+    }
+    .container{
+        max-width: 1100px;
+    }
+    .head{
+        background-image: url(../images/desktop/image-hero.jpg);
+        .header{
+            .container{
+                display: grid;
+                grid-template-columns: 65% 35%;
+                grid-template-rows: auto auto;
+                .logo{
+                    img{
+                        width: 30%;
+                    }
+                }
+                .menuIcon{
+                    display: none;
+                }
+                .desktopNavigation{
+                    display: block;
+                    grid-column: 2 ;
+                    ul{
+                        display: flex;
+                        li{
+                            margin-left: 2em;
+                            a{
+                                color: var(--whiteFontColor) ;
+                                font-family:var(--smallTextFont) ;
+                                font-size: .9em;
+                                text-transform: unset;
+                                padding: .25em;
+                            }
+                            &:hover{
+                                border-bottom: 1px solid var(--whiteFontColor);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .headText{
+            width: 60%;
+            margin: 10vh 0em;
+            p{
+                font-size: 5em;
+            }
+        }
+    }
+
+
+    .main{
+
+        .container{
+            .vr_section{
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: auto;
+                .sectionImage{
+                    background-image: url(../images/desktop/image-interactive.jpg);
+                    height: 500px;
+                    grid-column: 1;
+                    grid-row: 1;
+                    overflow:hidden;
+                }
+                .textSection{
+                    background-color: #fff;
+                    overflow:hidden;
+                    width: 100%;
+                    grid-column: 2 / span 4 ;
+                    padding: 3em;
+                    margin-top: 11em;
+                    margin-left: -8em;
+                    h1,p{
+                        text-align: left;
+                        width: 100%;
+                    }
+                    h1{
+                        width: 70%;
+                    }
+                }
+            }
+            .ourCreations{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                align-items: center;
+                h1{
+                    grid-column: 1;
+                    grid-row: 1;
+                    margin: 0;
+                }
+                .seeAll{
+                    grid-column: 2;
+                    grid-row: 1;
+                }
+                .gallery{
+                    margin-top: 4em;
+                    grid-column: 1 / span 2;
+                    grid-row: 2;
+                    display: grid;
+                    grid-template-columns: 25% 25% 25% 25%;
+                    grid-template-rows: auto auto;
+                    .image{
+                        height: 450px;
+                    }
+                    .boxes#one{
+                        .image{
+                            background-image: url(../images/desktop/image-deep-earth.jpg);
+                        }
+                    }
+                    .boxes#two{
+                        .image{
+                            background-image: url(../images/desktop/image-night-arcade.jpg);
+        
+                        }
+                    }
+                    .boxes#three{
+                        .image{
+                            background-image: url(../images/desktop/image-soccer-team.jpg);
+        
+                        }
+                    }
+                    .boxes#four{
+                        .image{
+                            background-image: url(../images/desktop/image-grid.jpg);
+                        }
+                    }
+                    .boxes#five{
+                        .image{
+                            background-image: url(../images/desktop/image-from-above.jpg);
+                        }
+                    }
+                    .boxes#six{
+                        .image{
+                            background-image: url(../images/desktop/image-pocket-borealis.jpg);
+                        }
+                    }
+                    .boxes#seven{
+                        .image{
+                            background-image: url(../images/desktop/image-curiosity.jpg);
+                        }
+                    }
+                    .boxes#eight{
+                        .image{
+                            background-image: url(../images/desktop/image-fisheye.jpg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .footer{
+        margin-top: 7em;
+        .container{
+            display: grid;
+            grid-template-columns: 30% 44% 26%;
+            grid-template-rows: auto auto;
+            justify-content:space-between;
+            align-items: center;
+            .logo{
+                width: 55%;
+                margin-top: 0;
+                img{
+                    width: 172px;
+                    height: 30px;
+                }
+            }
+            .footer_menu{
+                grid-column: 1;
+                grid-row: 2;
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    li{
+                        margin:1em 1em 0 0;
+                        a{
+                            padding-bottom: .5em;
+                        }
+                    }
+                }
+            }
+            .socials{
+                margin: 0;
+                text-align: right;
+                grid-row: 1;
+                grid-column: 3;
+            }
+            p{
+                margin: 0;
+                grid-row: 2;
+                grid-column: 3;
+            }
+        }
+    }
+
+}
+
